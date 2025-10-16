@@ -3,7 +3,7 @@
 >
 >> Changed by c4w, due to updating the youtube UI and not changing the css by the extension developer.
 
-# chrome extension description:
+# Chrome extension description:
 
 Toggle Picture-in-Picture for YouTube videos — draggable window outside browser.
 
