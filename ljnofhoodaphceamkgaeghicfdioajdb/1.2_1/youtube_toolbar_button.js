@@ -20,22 +20,11 @@
         button.title = 'Picture-in-Picture (Extension)';
         button.setAttribute('aria-label', 'Picture-in-Picture');
         
-        // Style the button to match YouTube's design
-        button.style.cssText = `
-            display: inline-block;
-            width: 48px;
-            height: 48px;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-            margin: 0;
-            vertical-align: top;
-        `;
 
         // Create the icon using SVG from icon.svg
         const iconSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        iconSvg.setAttribute('height', '28');
-        iconSvg.setAttribute('width', '28');
+        iconSvg.setAttribute('height', '24');
+        iconSvg.setAttribute('width', '24');
         iconSvg.setAttribute('viewBox', '0 0 24 24');
         iconSvg.setAttribute('fill', 'none');
         
@@ -57,14 +46,6 @@
         iconSvg.appendChild(path2);
         button.appendChild(iconSvg);
 
-        // Add hover effect
-        button.addEventListener('mouseenter', () => {
-            button.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-        });
-        
-        button.addEventListener('mouseleave', () => {
-            button.style.backgroundColor = 'transparent';
-        });
 
         // Add click handler
         button.addEventListener('click', handlePiPClick);
