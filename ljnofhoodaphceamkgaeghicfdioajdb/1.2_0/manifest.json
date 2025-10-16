@@ -1,0 +1,24 @@
+{
+   "action": {
+      "default_title": "Toggle PiP"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "youtube_toolbar_button.js" ],
+      "matches": [ "https://www.youtube.com/*", "https://*.youtube.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Toggle Picture-in-Picture for YouTube videos — draggable window outside browser.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv4pDBfo+I3I5ta71EzGFx531365ZWRdQzs+Rt1mCCbCerSDEh/sbufZqqj/AGzbv4A10Wt7W3P5D7kCHp/nehBN2mxvOlXC+rsJZZLDkZN0LGM/TF0HYfMdEx/YkDjzAi62fzXXZGi3yX/PmXQ4kvimZ5oHiTZfU0uMLfMcZlARuE/4j8mO3NEd+LL7wXZD6NrBjYY08nrAczW3gs7uEkJPfwL6YUjYbpZHBq7DyApsy4rgQgxby6xwKBJfLP5i7/nZQWy//SkNS0o/MbDFzL0dYhNNQMgemN7ZF23m1gBnZYnFR9HNjaRv9Bg/Kely3ekQ/3BFk6laH/DQmNm+6rQIDAQAB",
+   "manifest_version": 3,
+   "name": "PiP - YouTube PiP",
+   "permissions": [ "activeTab", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2"
+}
